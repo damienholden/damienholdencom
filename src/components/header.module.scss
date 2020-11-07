@@ -1,0 +1,28 @@
+.header {
+  padding: 1rem 0 3rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-list-item-container {
+  margin: 0 1rem;
+}
+
+.nav-item {
+  padding: .5rem 1rem;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.nav-item:hover {
+  border-color:red;
+  transition: border-color ease 500ms;
+}
+.active-nav-item {
+  border-color:red;
+}
