@@ -622,3 +622,28 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/***
+Custom CSS
+***/
+body{
+  background:#ffffff;
+  color:#000000;
+}
+body.home {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../assets/homeBG.jpg) no-repeat top;
+  background-size: cover;
+  //fade the background in and out. too jumpy atm
+  transition: background-image 0.2s ease-in-out;
+  color:#ffffff;
+}
+
+.light {
+  color:#ffffff;
+}
+
+.dark {
+  color:#000000;
+  fill:#000000;
+}

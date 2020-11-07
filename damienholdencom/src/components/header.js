@@ -1,37 +1,27 @@
 import React from "react"
 
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 
-// import './header.module.scss'
+import classNames from 'classNames'
 import headerStyles from "./header.module.scss"
 
-const Header = () => {
-  const data = useStaticQuery(graphql`
-  query {
-    site{
-      siteMetadata{
-        title
-      }
-    }
-  }
-  `)
+const Header = (props) => {
   return (
     <header className={headerStyles.header}>
-      <h1>{data.site.siteMetadata.title}</h1>
       <nav>
         <ul className={headerStyles.navList}>
-          <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">
+          <li className={headerStyles.navListItemContainer}>
+            <Link className={classNames(props.theme === "dark" ? "dark" : "light", headerStyles.navItem)} activeClassName={headerStyles.activeNavItem} to="/">
               Home
             </Link>
           </li>
-          <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/portfolio">
-              Portfolio
+          <li className={headerStyles.navListItemContainer}>
+            <Link className={classNames(props.theme === "dark" ? "dark" : "light", headerStyles.navItem)} activeClassName={headerStyles.activeNavItem} to="/projects">
+              Projects
             </Link>
           </li>
-          <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">
+          <li className={headerStyles.navListItemContainer}>
+            <Link className={classNames(props.theme === "dark" ? "dark" : "light", headerStyles.navItem)} activeClassName={headerStyles.activeNavItem} to="/contact">
               Contact
             </Link>
           </li>

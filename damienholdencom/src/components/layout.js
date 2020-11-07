@@ -1,18 +1,20 @@
 import React from "react"
 import Footer from "../components/footer"
 import Header from "../components/header"
+import classNames from 'classNames'
 import "../styles/index.scss"
 import layoutStyles from "./layout.module.scss"
 
 const Layout = props => {
+  const theme = !props.theme ? "dark" : props.theme;
   return (
-    <div className={layoutStyles.container}>
+    <section className={classNames('content-container', `${layoutStyles.container}`)}>
       <div className={layoutStyles.content}>
-        <Header />
+        <Header theme={theme} />
         {props.children}
       </div>
-      <Footer />
-    </div>
+      <Footer theme={theme} />
+    </section>
   )
 }
 

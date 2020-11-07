@@ -1,0 +1,17 @@
+.project-container {
+  width: 100%;
+  padding:.75rem;
+  margin:1.5rem 0;
+  .project-image {
+    display: inline-block;
+    width:100%;
+    padding:5px;
+    img {
+      min-width: 100%;
+    }
+  }
+  .project-description {
+    display: inline-block;
+    width:100%;
+  }
+}

@@ -8,17 +8,21 @@
   margin: 0;
 }
 
+.nav-list-item-container {
+  margin: 0 1rem;
+}
+
 .nav-item {
-  color: #999999;
-  font-size: 0.9rem;
-  margin-right: 1.3rem;
+  padding: .5rem 1rem;
+  font-size: 18px;
+  text-align: center;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
-
 .nav-item:hover {
-  color:#666666;
+  border-color:red;
+  transition: border-color ease 500ms;
 }
-
 .active-nav-item {
-  color:#333333
+  border-color:red;
 }

@@ -1,18 +1,20 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-const Footer = () =>  {
-  const data = useStaticQuery(graphql`
-  query {
-    site{
-      siteMetadata{
-        author
-      }
-    }
-  }
-  `)
+import { Link } from "gatsby"
+
+import Icon from "../components/icon";
+import footerStyles from "./footer.module.scss"
+
+const Footer = (props) =>  {
   return (
     <footer>
-      <p>{data.site.siteMetadata.author}</p>
+      <div className={footerStyles.social}>
+      <Link href="https://www.linkedin.com/in/damienholden/" target="_blank">
+        <Icon icon="linkedin" color={props.theme} />
+      </Link>
+      <Link href="https://github.com/damienholden" target="_blank">
+        <Icon icon="github" color={props.theme} />
+      </Link>
+      </div>
     </footer>
   )
 }
