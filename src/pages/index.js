@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import indexStyles from "./index.module.scss"
 
@@ -14,8 +14,7 @@ const IndexPage = () => {
         <h1>Hello,</h1>
         <h2>I'm Damien and I'm a software engineer based in Dublin Ireland.</h2>
         <p>
-          More info coming soon.
-          {/* Here are some of my <Link className={indexStyles.link}  to="/projects">projects</Link> */}
+          Here are some of my <Link className={indexStyles.link}  to="/projects">projects</Link>
         </p>
       </section>
     </Layout>
