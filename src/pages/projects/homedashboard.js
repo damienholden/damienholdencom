@@ -1,14 +1,18 @@
 import React from "react"
-
-import Layout from "../../components/layout"
+import "../../styles/homeDashboard.scss"
+import Time from "../../components/time"
 import Head from "../../components/head"
+import Weather from "../../components/weather"
+import ToDo from "../../components/todo"
 
 const HomeDashboardPage = () => {
   return (
-    <Layout>
-      <Head title="Homedashboard" />
-      <h2>Home Dashboard</h2>
-    </Layout>
+    <>
+    <Head title="homeDashboard" />
+      <Time />
+      <ToDo />
+      <Weather />
+    </>
   )
 }
 

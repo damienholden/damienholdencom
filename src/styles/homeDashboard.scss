@@ -1,0 +1,57 @@
+body.homedashboard {
+  background: url(../assets/homeDashboardBg.jpg) center;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+.widget {
+  padding: 2em;
+  margin: 1rem;
+  color: white;
+  border-radius: 8px;
+  display: block;
+  background: rgba(0, 0, 0, 0.8);
+  max-width: 26rem;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.dashboard div.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.dashboard div.row {
+  display: flex;
+  flex: 1 100%;
+  flex-direction: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.widget {
+  float:left;
+  &__noData {
+    display: flex;
+    align-items: center;
+    text-align:center;
+    div {
+      margin:0 auto;
+    }
+  }
+}
+svg {
+  vertical-align: middle;
+}
+// Handle mobile
+@media only screen and (max-width: 600px) {
+  .widget {
+    min-width:100%!important;
+    margin:1rem 0;
+  }
+}

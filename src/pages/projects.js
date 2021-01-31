@@ -37,9 +37,9 @@ const ProjectsPage = () => {
             <span className={projectStyles.projectSkill}>React</span>
             <span className={projectStyles.projectSkill}>ES6+</span>
           </div>
-          <Link className={projectStyles.button} to="/projects/homedashboard" target="_blank">
+          <a className={projectStyles.button} href="/projects/homeDashboard/" target="_blank">
             View Demo
-          </Link>
+          </a>
         </div>
       </div>
       <hr />
