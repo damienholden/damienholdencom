@@ -69,7 +69,7 @@ function WeatherComponent() {
           </div>
           <div className="group-content">
             <img
-              src={`http://openweathermap.org/img/wn/${weatherResult.icon}@2x.png`}
+              src={`https://openweathermap.org/img/wn/${weatherResult.icon}@2x.png`}
               alt={`${weatherResult.description} icon`}
             />
           </div>
