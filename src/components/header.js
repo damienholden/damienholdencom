@@ -31,7 +31,7 @@ const Header = props => {
               Projects
             </Link>
           </li>
-          <li className={headerStyles.navListItemContainer}>
+          {/* <li className={headerStyles.navListItemContainer}>
             <Link
               className={`
               ${props.theme === "dark" ? "dark" : "light"}
@@ -41,7 +41,7 @@ const Header = props => {
             >
               Contact
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
