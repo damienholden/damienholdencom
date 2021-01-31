@@ -8,7 +8,6 @@ import projectsStyles from "./projects.module.scss"
 import indexStyles from "./index.module.scss"
 
 import TextField from "@material-ui/core/TextField"
-import { Link } from "gatsby"
 
 const ContactPage = () => {
   return (
@@ -17,13 +16,13 @@ const ContactPage = () => {
       <h1>Contact</h1>
       <p>
         You can contact me using the form below or via{" "}
-        <Link
+        <a
           className={indexStyles.link}
           to="https://www.linkedin.com/in/damienholden/"
           target="_blank"
         >
           LinkedIn
-        </Link>
+        </a>
         .
       </p>
       <form
@@ -33,7 +32,7 @@ const ContactPage = () => {
         data-netlify-recaptcha="true"
         className={contactStyles.form}
       >
-        <p class="hidden" style={{ display: "none" }}>
+        <p className="hidden" style={{ display: "none" }}>
           <label>
             Don’t fill this out if you're human: <input name="bot-field" />
           </label>

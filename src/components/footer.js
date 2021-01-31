@@ -8,12 +8,12 @@ const Footer = (props) =>  {
   return (
     <footer>
       <div className={footerStyles.social}>
-      <Link href="https://www.linkedin.com/in/damienholden/" target="_blank">
+      <a href="https://www.linkedin.com/in/damienholden/" target="_blank">
         <Icon icon="linkedin" color={props.theme} />
-      </Link>
-      <Link href="https://github.com/damienholden" target="_blank">
+      </a>
+      <a href="https://github.com/damienholden" target="_blank">
         <Icon icon="github" color={props.theme} />
-      </Link>
+      </a>
       </div>
     </footer>
   )
