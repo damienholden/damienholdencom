@@ -18,7 +18,7 @@ const ContactPage = () => {
       <p>You can contact me using the form below or via <Link className={indexStyles.link} to="https://www.linkedin.com/in/damienholden/" target="_blank">LinkedIn</Link>.</p>
       <form
         name="contact"
-        method="POST"
+        action="POST"
         netlify-honeypot="bot-field"
         data-netlify="true"
         className={contactStyles.form}
@@ -38,6 +38,7 @@ const ContactPage = () => {
         <TextField id="outlined-basic" color="primary" label="Message" variant="outlined" name="message" placeholder="" multiline={true}
       rows={4} size="small" required/>
         </p>
+        <div data-netlify-recaptcha="true"></div>
         <p>
           <button className={projectsStyles.button} type="submit">Send</button>
         </p>
