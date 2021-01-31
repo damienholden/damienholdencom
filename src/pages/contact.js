@@ -7,7 +7,7 @@ import contactStyles from "./contact.module.scss"
 import projectsStyles from "./projects.module.scss"
 import indexStyles from "./index.module.scss"
 
-import TextField from '@material-ui/core/TextField';
+import TextField from "@material-ui/core/TextField"
 import { Link } from "gatsby"
 
 const ContactPage = () => {
@@ -15,32 +15,72 @@ const ContactPage = () => {
     <Layout>
       <Head title="Contact" />
       <h1>Contact</h1>
-      <p>You can contact me using the form below or via <Link className={indexStyles.link} to="https://www.linkedin.com/in/damienholden/" target="_blank">LinkedIn</Link>.</p>
+      <p>
+        You can contact me using the form below or via{" "}
+        <Link
+          className={indexStyles.link}
+          to="https://www.linkedin.com/in/damienholden/"
+          target="_blank"
+        >
+          LinkedIn
+        </Link>
+        .
+      </p>
       <form
         name="contact"
-        action="POST"
-        netlify-honeypot="bot-field"
+        method="POST"
         data-netlify="true"
+        data-netlify-recaptcha="true"
         className={contactStyles.form}
       >
-        <p class="hidden" style={{display:"none"}}>
+        <p class="hidden" style={{ display: "none" }}>
           <label>
             Don’t fill this out if you're human: <input name="bot-field" />
           </label>
         </p>
         <p>
-        <TextField id="outlined-basic" color="primary" label="Name" variant="outlined" name="name" placeholder="Name" size="small" required/>
+          <TextField
+            id="outlined-basic"
+            color="primary"
+            label="Name"
+            variant="outlined"
+            name="name"
+            placeholder="Name"
+            size="small"
+            required
+          />
         </p>
         <p>
-        <TextField id="outlined-basic" color="primary" label="Email" variant="outlined" name="email" placeholder="Email" size="small" required/>
+          <TextField
+            id="outlined-basic"
+            color="primary"
+            label="Email"
+            variant="outlined"
+            name="email"
+            placeholder="Email"
+            size="small"
+            required
+          />
         </p>
         <p>
-        <TextField id="outlined-basic" color="primary" label="Message" variant="outlined" name="message" placeholder="" multiline={true}
-      rows={4} size="small" required/>
+          <TextField
+            id="outlined-basic"
+            color="primary"
+            label="Message"
+            variant="outlined"
+            name="message"
+            placeholder=""
+            multiline={true}
+            rows={4}
+            size="small"
+            required
+          />
         </p>
         <div data-netlify-recaptcha="true"></div>
         <p>
-          <button className={projectsStyles.button} type="submit">Send</button>
+          <button className={projectsStyles.button} type="submit">
+            Send
+          </button>
         </p>
       </form>
     </Layout>
