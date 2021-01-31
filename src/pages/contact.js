@@ -32,6 +32,7 @@ const ContactPage = () => {
         data-netlify-recaptcha="true"
         className={contactStyles.form}
       >
+        <input type="hidden" name="form-name" value="contact" />
         <p className="hidden" style={{ display: "none" }}>
           <label>
             Don’t fill this out if you're human: <input name="bot-field" />
