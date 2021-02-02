@@ -10,6 +10,13 @@ module.exports = {
     author:'Damien Holden'
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-181356727-1",
+        head:true,
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     `gatsby-plugin-sharp`,
