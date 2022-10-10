@@ -1,8 +1,9 @@
 {
   "name": "damienholdencom",
   "version": "1.0.0",
+  "author": "Damien Holden",
   "private": true,
-  "description": "damienholdencom",
+  "description": "Damien Holden's Website",
   "keywords": [
     "gatsby"
   ],
@@ -14,7 +15,13 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^3.0.1",
+    "@chakra-ui/icons": "^2.0.4",
+    "@chakra-ui/react": "^2.2.4",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
     "babel-plugin-styled-components": "^2.0.7",
+    "framer-motion": "^6.5.1",
     "gatsby": "^4.19.2",
     "gatsby-plugin-styled-components": "^5.19.0",
     "react": "^18.1.0",

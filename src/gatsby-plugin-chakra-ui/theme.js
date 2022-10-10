@@ -1,0 +1,46 @@
+// 1. import `extendTheme` function
+import { extendTheme, UnorderedList } from "@chakra-ui/react";
+import { mode } from "@chakra-ui/theme-tools";
+
+// 2. Add your color mode config
+const config = {
+  initialColorMode: "light",
+  useSystemColorMode: false,
+};
+
+const styles = {
+  global: (props) => ({
+    body: {
+      bg: mode("#ffffff", "#202023")(props),
+    },
+  }),
+};
+
+const fonts = {
+  heading: `Roboto, sans-serif`,
+  body: `Roboto, sans-serif`,
+};
+
+const components = {
+  Heading: {
+    variants: {
+      "section-title": {
+        fontSize: 26,
+        textDecoration: "underline",
+        textDecorationColor: "#e2e2e240",
+        textUnderlineOffset: 6,
+        textDecorationThickness: 3,
+      },
+    },
+  },
+  Link: {
+    baseStyle: (props) => ({
+      color: mode("#000000", "#ffffff")(props),
+    }),
+  },
+};
+
+// 3. extend the theme
+const theme = extendTheme({ config, components, fonts, styles });
+
+export default theme;
