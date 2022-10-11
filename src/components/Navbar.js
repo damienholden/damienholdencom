@@ -24,8 +24,17 @@ import {
 
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { ThemeToggleButton } from "./ThemeToggleButton";
-// import { MobileMenu } from "./MobileMenu";
 
+const links = [
+  {
+    text: "Projects",
+    href: "/#projects",
+  },
+  {
+    text: "Contact",
+    href: "/#contact",
+  },
+];
 export const Navbar = () => {
   const { isOpen, onClose, onOpen } = useDisclosure();
   const btnRef = React.useRef();
@@ -60,8 +69,9 @@ export const Navbar = () => {
           mt={{ base: 4, nmd: 0 }}
           justify="flex-end"
         >
-          <Link>About me</Link>
-          <Link>Projects</Link>
+          {links.map(({ text, href }) => (
+            <Link href={href}>{text}</Link>
+          ))}
         </Stack>
         <Box align="right" flex={1}>
           <ThemeToggleButton />
@@ -85,7 +95,15 @@ export const Navbar = () => {
                   <DrawerCloseButton />
                   <DrawerHeader>Menu</DrawerHeader>
 
-                  <DrawerBody></DrawerBody>
+                  <DrawerBody>
+                    <Box display="flex" flexDirection="column">
+                      {links.map(({ text, href }) => (
+                        <Link href={href} pt={2}>
+                          <Flex align="center">{text}</Flex>
+                        </Link>
+                      ))}
+                    </Box>
+                  </DrawerBody>
 
                   <DrawerFooter>
                     <Button variant="outline" mr={3} onClick={onClose}>

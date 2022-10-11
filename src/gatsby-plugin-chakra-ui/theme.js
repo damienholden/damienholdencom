@@ -11,7 +11,7 @@ const config = {
 const styles = {
   global: (props) => ({
     body: {
-      bg: mode("#ffffff", "#202023")(props),
+      bg: mode("#ffffff", "#34568")(props),
     },
   }),
 };
@@ -30,6 +30,7 @@ const components = {
         textDecorationColor: "#e2e2e240",
         textUnderlineOffset: 6,
         textDecorationThickness: 3,
+        marginBottom: 8,
       },
     },
   },
