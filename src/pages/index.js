@@ -8,8 +8,8 @@ import Fonts from "../gatsby-plugin-chakra-ui/fonts";
 const Index = () => {
   return (
     <>
-      {console.log("theme: ", theme)}
-      {/* here is the magic */}
+      {/* {console.log("theme: ", theme)}
+      here is the magic */}
       <Fonts />
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <ChakraProvider theme={theme}>

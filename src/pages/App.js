@@ -1,19 +1,18 @@
 import React from "react";
 
-import { Box, Container } from "@chakra-ui/react";
-import { Navbar } from "../components/navbar";
+import { Container } from "@chakra-ui/react";
+import { Layout } from "../components/Layout/Layout";
 import { Hero } from "../components/Hero/Hero";
 import { About } from "../components/About";
 
 const App = () => {
   return (
-    <Box>
-      <Navbar />
+    <Layout>
       <Hero />
       <Container maxW="container.md" pt={14}>
         <About />
       </Container>
-    </Box>
+    </Layout>
   );
 };
 

@@ -27,8 +27,12 @@ import { ThemeToggleButton } from "./ThemeToggleButton";
 
 const links = [
   {
+    text: "Home",
+    href: "/",
+  },
+  {
     text: "Projects",
-    href: "/#projects",
+    href: "/projects",
   },
   {
     text: "Contact",
