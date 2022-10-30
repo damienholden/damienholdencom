@@ -6,7 +6,7 @@ import { Section } from "../Section";
 
 export const About = () => {
   return (
-    <Section delay={0.5}>
+    <Section delay={0.5} displayInViewport={true}>
       <Heading as="h3" variant="section-title">
         About
       </Heading>

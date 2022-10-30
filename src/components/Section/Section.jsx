@@ -1,12 +1,27 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export const Section = ({ children, duration = "0.9", delay = 0 }) => {
+export const Section = ({
+  children,
+  duration = "0.5",
+  delay = 0,
+  displayInViewport,
+}) => {
+  const inViewPort = {
+    initial: { opacity: 0 },
+    transition: { duration: duration, delay },
+    whileInView: { opacity: 1 },
+    viewport: { once: true },
+  };
+
   return (
     <motion.div
-      initial={{ y: 10, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: duration, delay }}
+      // animate={{ y: 0, opacity: 1 }}
+      // initial={{ opacity: 0 }}
+      // transition={{ duration: duration, delay }}
+      // whileInView={{ opacity: 1 }}
+      // viewport={{ once: true }}
+      {...(displayInViewport && inViewPort)}
     >
       {children}
     </motion.div>

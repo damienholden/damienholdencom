@@ -9,7 +9,7 @@ const App = () => {
   return (
     <Layout>
       <Hero />
-      <Container maxW="container.md" pt={14}>
+      <Container maxW="container.md" pt={8}>
         <About />
       </Container>
     </Layout>

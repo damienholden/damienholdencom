@@ -51,6 +51,7 @@ export const Navbar = () => {
       bg={useColorModeValue("#ffffff40", "#20202340")}
       style={{ backdropFilter: "blur(10px" }}
       zIndex={1}
+      borderBottom="solid 1px grey"
     >
       <Container
         display="flex"
@@ -110,10 +111,10 @@ export const Navbar = () => {
                   </DrawerBody>
 
                   <DrawerFooter>
-                    <Button variant="outline" mr={3} onClick={onClose}>
+                    {/* <Button variant="outline" mr={3} onClick={onClose}>
                       {" "}
                       Close
-                    </Button>
+                    </Button> */}
                   </DrawerFooter>
                 </DrawerContent>
               </Drawer>
