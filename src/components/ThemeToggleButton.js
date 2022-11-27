@@ -13,8 +13,5 @@ export const ThemeToggleButton = () => {
       aria-label="Toggle Theme"
       onClick={() => toggleColorMode()}
     ></IconButton>
-    //   <Button size="lg" onClick={() => toggleColorMode()}>
-    //   Toggle Mode
-    // </Button>
   );
 };

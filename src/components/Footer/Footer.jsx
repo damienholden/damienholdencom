@@ -1,12 +1,12 @@
 import React from "react";
-import { Box, Container, Link } from "@chakra-ui/react";
-import { GithubIcon, LinkedinIcon } from "@chakra-ui/icons";
-
+import { Box, Container, Link, Icon, Divider } from "@chakra-ui/react";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FooterWrapper } from "./Footer.styles";
 
 export const Footer = () => {
   return (
-    <FooterWrapper backgroundColor="#30465c">
+    <FooterWrapper>
+      <Divider />
       <Container maxW="container.md" p={4}>
         <Box display="flex" justifyContent="flex-end">
           <Link
@@ -16,7 +16,7 @@ export const Footer = () => {
             rel="noreferrer"
             isExternal
           >
-            {/* <GithubIcon /> */}Github
+            <Icon as={BsLinkedin} w={6} h={6} focusable={true} />
           </Link>
           <Link
             href="https://github.com/damienholden"
@@ -24,7 +24,7 @@ export const Footer = () => {
             rel="noreferrer"
             isExternal
           >
-            {/* <LinkedinIcon /> */} Linkedin
+            <Icon as={BsGithub} w={6} h={6} focusable={true} />
           </Link>
         </Box>
       </Container>

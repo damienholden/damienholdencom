@@ -1,5 +1,5 @@
 // 1. import `extendTheme` function
-import { extendTheme, UnorderedList } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 
 // 2. Add your color mode config

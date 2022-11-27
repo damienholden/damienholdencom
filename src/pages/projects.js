@@ -33,12 +33,15 @@ const Projects = () => {
           pt={5}
           flexDirection={{ md: "row", sm: "column" }}
           alignItems={"center"}
+          maxW="container.md"
         >
           <Box
             m="2"
             mt="4"
             p="5"
             maxW="320px"
+            w={{ md: "50%", sm: "80%" }}
+            display="block"
             borderWidth="1px"
             backgroundColor={useColorModeValue("", "")}
             color={useColorModeValue("", "")}
@@ -53,7 +56,7 @@ const Projects = () => {
               their API make something that's quick and easy to use as an
               alternative to their own website.
             </Text>
-            <Flex mt={2} align="center">
+            <Box mt={2} align="left">
               <Badge mr="1" colorScheme="blue">
                 React
               </Badge>
@@ -61,7 +64,7 @@ const Projects = () => {
                 Styled Components
               </Badge>
               <Badge colorScheme="blue">Plus</Badge>
-            </Flex>
+            </Box>
             <Flex mt={2} align="center">
               <Button as="a" href="#" colorScheme="blue" mr={2}>
                 View
@@ -71,7 +74,17 @@ const Projects = () => {
               </Button>
             </Flex>
           </Box>
-          <Box m="2" mt="4" p="5" maxW="320px" borderWidth="1px">
+          <Box
+            m="2"
+            mt="4"
+            p="5"
+            maxW="320px"
+            w={{ md: "50%", sm: "80%" }}
+            display="block"
+            borderWidth="1px"
+            backgroundColor={useColorModeValue("", "")}
+            color={useColorModeValue("", "")}
+          >
             {/* <Image borderRadius="md" src="https://bit.ly/2k1H1t6" /> */}
             <Text mt={2} fontSize="xl" fontWeight="semibold" lineHeight="short">
               ToDo list
@@ -103,11 +116,22 @@ const Projects = () => {
           pt={5}
           flexDirection={{ md: "row", sm: "column" }}
           alignItems={"center"}
+          maxW="container.md"
         >
-          <Box m="2" mt="4" p="5" maxW="320px" borderWidth="1px">
+          <Box
+            m="2"
+            mt="4"
+            p="5"
+            maxW="320px"
+            w={{ md: "50%", sm: "80%" }}
+            display="block"
+            borderWidth="1px"
+            backgroundColor={useColorModeValue("", "")}
+            color={useColorModeValue("", "")}
+          >
             {/* <Image borderRadius="md" src="https://bit.ly/2k1H1t6" /> */}
             <Text mt={2} fontSize="xl" fontWeight="semibold" lineHeight="short">
-              Chat Application
+              Giphy Search
             </Text>
             <Text mt={2}>
               I've always been interested in the Giphy API from the day I
@@ -115,7 +139,7 @@ const Projects = () => {
               their API make something that's quick and easy to use as an
               alternative to their own website.
             </Text>
-            <Flex mt={2} align="center">
+            <Box mt={2} align="left">
               <Badge mr="1" colorScheme="blue">
                 React
               </Badge>
@@ -123,7 +147,7 @@ const Projects = () => {
                 Styled Components
               </Badge>
               <Badge colorScheme="blue">Plus</Badge>
-            </Flex>
+            </Box>
             <Flex mt={2} align="center">
               <Button as="a" href="#" colorScheme="blue" mr={2}>
                 View
@@ -133,10 +157,20 @@ const Projects = () => {
               </Button>
             </Flex>
           </Box>
-          <Box m="2" mt="4" p="5" maxW="320px" borderWidth="1px">
+          <Box
+            m="2"
+            mt="4"
+            p="5"
+            maxW="320px"
+            w={{ md: "50%", sm: "80%" }}
+            display="block"
+            borderWidth="1px"
+            backgroundColor={useColorModeValue("", "")}
+            color={useColorModeValue("", "")}
+          >
             {/* <Image borderRadius="md" src="https://bit.ly/2k1H1t6" /> */}
             <Text mt={2} fontSize="xl" fontWeight="semibold" lineHeight="short">
-              Worldie Clone
+              ToDo list
             </Text>
             <Text mt={2}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
