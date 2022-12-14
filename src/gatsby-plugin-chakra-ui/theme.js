@@ -4,8 +4,8 @@ import { mode } from "@chakra-ui/theme-tools";
 
 // 2. Add your color mode config
 const config = {
-  initialColorMode: "light",
-  useSystemColorMode: false,
+  initialColorMode: "dark",
+  useSystemColorMode: true,
 };
 
 const styles = {
@@ -43,5 +43,4 @@ const components = {
 
 // 3. extend the theme
 const theme = extendTheme({ config, components, fonts, styles });
-
 export default theme;

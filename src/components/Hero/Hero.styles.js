@@ -1,14 +1,24 @@
 import styled from "styled-components";
 
 export const HeroWrapper = styled.section`
-  width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(${(props) => props.backgroundImage}) no-repeat top;
+  background: ${(props) => props.backgroundColor};
   background-size: cover;
   background-position: center;
-  background-color: ${(props) => props.backgroundColor};
-  color: #ffffff;
   display: flex;
   align-items: center;
+  background-repeat: no-repeat;
+  position: relative;
+  &::after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: calc(100% - 100px);
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: ${(props) => props.waveColor};
+    -webkit-mask-image: url("../img/wavesNegative.svg");
+    mask-image: url("../img/wavesNegative.svg");
+  }
 `;

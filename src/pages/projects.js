@@ -87,11 +87,13 @@ const Projects = () => {
           >
             {/* <Image borderRadius="md" src="https://bit.ly/2k1H1t6" /> */}
             <Text mt={2} fontSize="xl" fontWeight="semibold" lineHeight="short">
-              ToDo list
+              Chat App
             </Text>
             <Text mt={2}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit.
+              I saw a lot of different uses of Socket.io over the past few
+              months so decided to have a go at creating a chat application.
+              This application will allow authenticated users to talk to
+              eachother with the help of web sockets.
             </Text>
             <Flex mt={2} align="center">
               <Badge mr="1" colorScheme="blue">
@@ -99,6 +101,9 @@ const Projects = () => {
               </Badge>
               <Badge mr="1" colorScheme="blue">
                 Socket.IO
+              </Badge>
+              <Badge mr="1" colorScheme="blue">
+                Next.js
               </Badge>
             </Flex>
             <Flex mt={2} align="center">
@@ -131,22 +136,18 @@ const Projects = () => {
           >
             {/* <Image borderRadius="md" src="https://bit.ly/2k1H1t6" /> */}
             <Text mt={2} fontSize="xl" fontWeight="semibold" lineHeight="short">
-              Giphy Search
+              ToDo List
             </Text>
             <Text mt={2}>
-              I've always been interested in the Giphy API from the day I
-              started using their application. I wanted to see if I could use
-              their API make something that's quick and easy to use as an
-              alternative to their own website.
+              Here's a simple todo list where a user can store, delete and check
+              off different things on a list. Authenticated users can store
+              their list and access it later on.
             </Text>
             <Box mt={2} align="left">
               <Badge mr="1" colorScheme="blue">
                 React
               </Badge>
-              <Badge mr="1" colorScheme="blue">
-                Styled Components
-              </Badge>
-              <Badge colorScheme="blue">Plus</Badge>
+              <Badge colorScheme="blue">Tailwind CSS</Badge>
             </Box>
             <Flex mt={2} align="center">
               <Button as="a" href="#" colorScheme="blue" mr={2}>

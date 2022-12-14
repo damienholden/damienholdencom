@@ -4,15 +4,14 @@ import {
   Container,
   Box,
   Link,
+  Image,
   Stack,
-  Heading,
   Flex,
   Menu,
   MenuButton,
   IconButton,
   useColorModeValue,
   useDisclosure,
-  Button,
   Drawer,
   DrawerBody,
   DrawerFooter,
@@ -23,7 +22,8 @@ import {
 } from "@chakra-ui/react";
 
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { ThemeToggleButton } from "./ThemeToggleButton";
+import { ThemeToggleButton } from "../ThemeToggleButton";
+import { MenuItem } from "./Navigation.styles";
 
 const links = [
   {
@@ -39,9 +39,10 @@ const links = [
     href: "/#contact",
   },
 ];
-export const Navbar = () => {
+export const Navigation = () => {
   const { isOpen, onClose, onOpen } = useDisclosure();
   const btnRef = React.useRef();
+  const itemColor = useColorModeValue("#000000", "#ffffff");
 
   return (
     <Box
@@ -50,20 +51,24 @@ export const Navbar = () => {
       w="100%"
       bg={useColorModeValue("#ffffff40", "#20202340")}
       style={{ backdropFilter: "blur(10px" }}
-      zIndex={1}
+      zIndex={5}
       borderBottom="solid 1px grey"
     >
       <Container
         display="flex"
         p={2}
-        maxW="container.md"
+        maxW={{ md: "container.lg" }}
         align="center"
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg">
-            Heading Logo
-          </Heading>
+          <Image
+            src={useColorModeValue(
+              "../img/logoLight.svg",
+              "../img/logoDark.svg"
+            )}
+            width="200px"
+          />
         </Flex>
         <Stack
           direction={{ base: "column", md: "row" }}
@@ -75,10 +80,12 @@ export const Navbar = () => {
           justify="flex-end"
         >
           {links.map(({ text, href }) => (
-            <Link href={href}>{text}</Link>
+            <MenuItem key={text} itemColor={itemColor}>
+              <Link href={href}>{text}</Link>
+            </MenuItem>
           ))}
         </Stack>
-        <Box align="right" flex={1}>
+        <Box align="right" flex={{ md: 0, sm: 1 }} ml={8}>
           <ThemeToggleButton />
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu>
@@ -103,7 +110,7 @@ export const Navbar = () => {
                   <DrawerBody>
                     <Box display="flex" flexDirection="column">
                       {links.map(({ text, href }) => (
-                        <Link href={href} pt={2}>
+                        <Link key={text} href={href} pt={2}>
                           <Flex align="center">{text}</Flex>
                         </Link>
                       ))}

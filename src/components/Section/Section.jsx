@@ -22,6 +22,7 @@ export const Section = ({
       // whileInView={{ opacity: 1 }}
       // viewport={{ once: true }}
       {...(displayInViewport && inViewPort)}
+      style={{ width: "100%" }}
     >
       {children}
     </motion.div>
