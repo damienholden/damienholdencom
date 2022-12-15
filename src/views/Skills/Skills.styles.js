@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
-export const ExperienceWrapper = styled.section`
+export const SkillsWrapper = styled.section`
   background: ${(props) => props.backgroundColor};
+  display: flex;
+  align-items: center;
   // &::before {
   //   content: "";
   //   background-image: url("../img/wavesNegative.svg");

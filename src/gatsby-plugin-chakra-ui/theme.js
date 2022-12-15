@@ -11,7 +11,7 @@ const config = {
 const styles = {
   global: (props) => ({
     body: {
-      bg: mode("#ffffff", "#34568")(props),
+      bg: mode("#ffffff", "#374151")(props),
     },
   }),
 };
@@ -27,7 +27,7 @@ const components = {
       "section-title": {
         fontSize: 26,
         textDecoration: "underline",
-        textDecorationColor: "#e2e2e240",
+        textDecorationColor: "#d1d1d1",
         textUnderlineOffset: 6,
         textDecorationThickness: 3,
         marginBottom: 8,

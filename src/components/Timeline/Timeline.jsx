@@ -31,15 +31,18 @@ export const Timeline = () => {
         <Flex direction="column">
           <TimelineItem
             title="Cartrawler"
-            body="This is my experience with Cartrawler"
+            startEndDate="May 2019 - Jun 2022"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac eros ac libero malesuada pulvinar. Suspendisse mollis nulla purus, eget ultricies eros viverra sed. Donec hendrerit nulla ut metus finibus tincidunt. Nullam sit amet fringilla mi. Suspendisse sit amet purus ultrices, tempus augue non, luctus odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac eros ac libero malesuada pulvinar. Suspendisse mollis nulla purus, eget ultricies eros viverra sed. Donec hendrerit nulla ut metus finibus tincidunt. Nullam sit amet fringilla mi. Suspendisse sit amet purus ultrices, tempus augue non, luctus odio."
           />
           <TimelineItem
             title="247Meeting"
-            body="This is my experience with 247Meeting"
+            startEndDate="November 2017 - May 2019"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac eros ac libero malesuada pulvinar. Suspendisse mollis nulla purus, eget ultricies eros viverra sed. Donec hendrerit nulla ut metus finibus tincidunt. Nullam sit amet fringilla mi. Suspendisse sit amet purus ultrices, tempus augue non, luctus odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac eros ac libero malesuada pulvinar. Suspendisse mollis nulla purus, eget ultricies eros viverra sed. Donec hendrerit nulla ut metus finibus tincidunt. Nullam sit amet fringilla mi. Suspendisse sit amet purus ultrices, tempus augue non, luctus odio."
           />
           <TimelineItem
             title="Bubble Digital"
-            body="This is my experience with Bubble Digital"
+            startEndDate="September 2015 - November 2017"
+            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac eros ac libero malesuada pulvinar. Suspendisse mollis nulla purus, eget ultricies eros viverra sed. Donec hendrerit nulla ut metus finibus tincidunt. Nullam sit amet fringilla mi. Suspendisse sit amet purus ultrices, tempus augue non, luctus odio."
             isFinalItem
           />
 

@@ -1,0 +1,50 @@
+[
+  {
+    "imgSrc": "../img/html5-logo.png",
+    "alt": "HTML5"
+  },
+  {
+    "imgSrc": "../img/css3-logo.png",
+    "alt": "CSS3"
+  },
+  {
+    "imgSrc": "../img/javascript-logo.png",
+    "alt": "JavaScript"
+  },
+  {
+    "imgSrc": "../img/react-logo.png",
+    "alt": "React"
+  },
+  {
+    "imgSrc": "../img/styled-components-logo.png",
+    "alt": "Styled Components"
+  },
+  {
+    "imgSrc": "../img/tailwind-css-logo.png",
+    "alt": "Tailwind"
+  },
+  {
+    "imgSrc": "../img/storybook-logo.png",
+    "alt": "Storybook"
+  },
+  {
+    "imgSrc": "../img/git-logo.png",
+    "alt": "Git"
+  },
+  {
+    "imgSrc": "../img/jenkins-logo.png",
+    "alt": "Jenkins"
+  },
+  {
+    "imgSrc": "../img/netlify-logo.png",
+    "alt": "Netlify"
+  },
+  {
+    "imgSrc": "../img/firebase-logo.png",
+    "alt": "Firebase"
+  },
+  {
+    "imgSrc": "../img/jest-logo.png",
+    "alt": "Jest"
+  }
+]

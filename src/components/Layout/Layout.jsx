@@ -1,17 +1,24 @@
 import React from "react";
 
-import { Box } from "@chakra-ui/react";
+import theme from "../../gatsby-plugin-chakra-ui/theme";
+import Fonts from "../../gatsby-plugin-chakra-ui/fonts";
+
+import { Box, ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import { Navigation } from "../Navigation";
 import { Footer } from "../Footer/Footer";
 
-import { ContentWrapper } from "./Layout.styles";
-
 export const Layout = ({ children }) => {
   return (
-    <Box>
-      <Navigation />
-      <ContentWrapper>{children}</ContentWrapper>
-      <Footer />
-    </Box>
+    <>
+      <Fonts />
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+      <ChakraProvider theme={theme}>
+        <Box>
+          <Navigation />
+          <main>{children}</main>
+          <Footer />
+        </Box>
+      </ChakraProvider>
+    </>
   );
 };

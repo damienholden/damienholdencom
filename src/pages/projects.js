@@ -3,7 +3,6 @@ import {
   Box,
   Container,
   Button,
-  Image,
   Flex,
   Text,
   Badge,
@@ -16,7 +15,7 @@ import { Layout } from "../components/Layout/Layout";
 const Projects = () => {
   return (
     <Layout>
-      <Container maxW="container.md" pt={20}>
+      <Container maxW="container.lg" pt={20} pb={8} as="section">
         <Heading as="h3" variant="section-title">
           Projects
         </Heading>

@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+});
+
 module.exports = {
   siteMetadata: {
     title: "Personal Website",
@@ -5,6 +9,14 @@ module.exports = {
     siteUrl: `https://www.damienholden.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_API_KEY,
+      },
+    },
+    `gatsby-plugin-image`,
     {
       resolve: "@chakra-ui/gatsby-plugin",
       options: {
@@ -15,7 +27,3 @@ module.exports = {
     "gatsby-plugin-styled-components",
   ],
 };
-
-// require("dotenv").config({
-//   path: `.env`,
-// });

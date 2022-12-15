@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <FooterWrapper>
       <Divider />
-      <Container maxW="container.md" p={4}>
+      <Container maxW="container.md" p={4} mt={4}>
         <Box display="flex" justifyContent="flex-end">
           <Link
             px={5}

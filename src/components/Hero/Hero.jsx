@@ -7,7 +7,6 @@ import {
   Image,
   useColorModeValue,
   Text,
-  Link,
 } from "@chakra-ui/react";
 
 import { Cursor, useTypewriter } from "react-simple-typewriter";
@@ -26,8 +25,8 @@ export const Hero = () => {
 
   return (
     <HeroWrapper
-      backgroundColor={useColorModeValue("#f5f5f5", "#000")}
-      waveColor={useColorModeValue("#fff", "#1a202c")}
+      backgroundColor={useColorModeValue("#f5f5f5", "#202023")}
+      waveColor={useColorModeValue("#f5f5f5", "#202023")}
     >
       <Section>
         <Container
@@ -35,8 +34,9 @@ export const Hero = () => {
           display="flex"
           justifyContent="space-between"
           alignItems="center"
+          flexDirection={{ sm: "row", base: "column-reverse" }}
         >
-          <Box mt="5" maxW="50%">
+          <Box mt="5" flexShrink={9}>
             <Heading as="h2" variant="page-title">
               <span>{text}</span>
               <Cursor cursorColor="#fffff" />
@@ -44,7 +44,7 @@ export const Hero = () => {
             <Section delay={0.5} displayInViewport={true}>
               <Box mt={5}>
                 <Text bold="true" fontSize={20}>
-                  I've been working professionally for over 8 years and my main
+                  I've been working professionally for over 7 years and my main
                   focus is around frontend development. I love to create
                   scalable solutions and have a keen eye for creating beautiful
                   UI's.
@@ -59,7 +59,7 @@ export const Hero = () => {
                 >
                   Projects
                 </Button>
-                <Button
+                {/* <Button
                   rightIcon={<ChevronRightIcon />}
                   as="a"
                   href="#"
@@ -68,11 +68,16 @@ export const Hero = () => {
                   ml={5}
                 >
                   View my CV
-                </Button>
+                </Button> */}
               </Box>
             </Section>
           </Box>
-          <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
+          <Box
+            mt={{ base: 4, md: 0 }}
+            ml={{ md: 6 }}
+            align="center"
+            display={{ base: "none", sm: "block" }}
+          >
             <Image
               borderRadius="full"
               borderColor="whiteAlpha.800"
@@ -80,7 +85,7 @@ export const Hero = () => {
               borderStyle="solid"
               boxSize="250px"
               display="inline-block"
-              src="../img/profile3.jpeg"
+              src="../img/profile.jpeg"
               alt="Damien Holden"
             />
           </Box>

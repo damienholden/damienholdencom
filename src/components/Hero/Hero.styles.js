@@ -2,12 +2,8 @@ import styled from "styled-components";
 
 export const HeroWrapper = styled.section`
   height: 100vh;
-  background: ${(props) => props.backgroundColor};
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
-  background-repeat: no-repeat;
   position: relative;
   &::after {
     content: "";

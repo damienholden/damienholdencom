@@ -59,16 +59,19 @@ export const Navigation = () => {
         p={2}
         maxW={{ md: "container.lg" }}
         align="center"
-        justify="space-between"
+        justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
-          <Image
-            src={useColorModeValue(
-              "../img/logoLight.svg",
-              "../img/logoDark.svg"
-            )}
-            width="200px"
-          />
+          <Link href="/">
+            <Image
+              src={useColorModeValue(
+                "../img/logoLight.svg",
+                "../img/logoDark.svg"
+              )}
+              width="200px"
+              alt="Logo"
+            />
+          </Link>
         </Flex>
         <Stack
           direction={{ base: "column", md: "row" }}

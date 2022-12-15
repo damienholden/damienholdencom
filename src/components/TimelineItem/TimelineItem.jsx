@@ -4,6 +4,7 @@ import { Box, Text, Flex, useColorModeValue, Image } from "@chakra-ui/react";
 export const TimelineItem = ({
   imageSrc = "../img/profile3.jpeg",
   title,
+  startEndDate,
   body,
   isFinalItem,
 }) => {
@@ -27,17 +28,21 @@ export const TimelineItem = ({
           borderColor="whiteAlpha.800"
           borderWidth="4px"
           borderStyle="solid"
-          boxSize="80px"
+          width="95%"
           src={imageSrc}
           alt="Damien Holden"
         />
         <Box w="2px" bg="gray.200" h={isFinalItem ? "15px" : "100%"}></Box>
       </Flex>
       <Flex direction="column" justifyContent="flex-start" h="100%">
-        <Text fontSize="sm" color={textColor} fontWeight="bold">
+        <Text fontSize="lg" color={textColor} fontWeight="bold">
           {title}
+          <Text fontSize="md" color="gray.500" fontWeight="bold">
+            {startEndDate}
+          </Text>
         </Text>
-        <Text fontSize="sm" color="gray.400" fontWeight="normal">
+
+        <Text fontSize="sm" fontWeight="normal" mt={4}>
           {body}
         </Text>
       </Flex>
