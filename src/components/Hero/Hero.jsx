@@ -33,7 +33,7 @@ export const Hero = () => {
           maxW={{ md: "container.lg" }}
           display="flex"
           justifyContent="space-between"
-          alignItems="center"
+          alignItems={{ md: "center", base: "" }}
           flexDirection={{ sm: "row", base: "column-reverse" }}
         >
           <Box mt="5" flexShrink={9}>

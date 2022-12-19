@@ -36,7 +36,7 @@ const links = [
   },
   {
     text: "Contact",
-    href: "/#contact",
+    href: "/contact",
   },
 ];
 export const Navigation = () => {

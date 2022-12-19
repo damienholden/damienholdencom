@@ -20,35 +20,35 @@ export const Skills = () => {
           <Heading as="h3" variant="section-title">
             Skills
           </Heading>
-          <Section delay={0.8} displayInViewport={true}>
-            <Grid
-              templateColumns={{
-                md: "repeat(6, 1fr)",
-                sm: "repeat(4, 1fr)",
-                base: "repeat(2, 1fr)",
-              }}
-              gap={6}
-            >
-              {skillsList.map((skill) => {
-                return (
-                  <GridItem
-                    key={skill.alt}
-                    h="85px"
-                    display="flex"
-                    justifyContent="center"
-                    alignItems="center"
-                  >
-                    <Image
-                      h="65px"
-                      src={skill.imgSrc}
-                      alt={skill.alt}
-                      title={skill.alt}
-                    />
-                  </GridItem>
-                );
-              })}
-            </Grid>
-          </Section>
+
+          <Grid
+            templateColumns={{
+              md: "repeat(6, 1fr)",
+              sm: "repeat(4, 1fr)",
+              base: "repeat(2, 1fr)",
+            }}
+            gap={6}
+          >
+            {skillsList.map((skill) => {
+              return (
+                <GridItem
+                  key={skill.alt}
+                  h="85px"
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                >
+                  <Image
+                    h="65px"
+                    src={skill.imgSrc}
+                    alt={skill.alt}
+                    title={skill.alt}
+                    loading="lazy"
+                  />
+                </GridItem>
+              );
+            })}
+          </Grid>
         </Container>
       </Section>
     </SkillsWrapper>

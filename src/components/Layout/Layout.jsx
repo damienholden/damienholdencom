@@ -7,6 +7,8 @@ import { Box, ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import { Navigation } from "../Navigation";
 import { Footer } from "../Footer/Footer";
 
+import { Main } from "./Layout.styles";
+
 export const Layout = ({ children }) => {
   return (
     <>
@@ -15,7 +17,7 @@ export const Layout = ({ children }) => {
       <ChakraProvider theme={theme}>
         <Box>
           <Navigation />
-          <main>{children}</main>
+          <Main>{children}</Main>
           <Footer />
         </Box>
       </ChakraProvider>
