@@ -12,7 +12,12 @@ import {
 export const ContactForm = () => {
   return (
     <Container maxW="container.md" p={4} mt={4}>
-      <form name="contact" netlify netlify-honeypot="bot-field">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
         <input type="hidden" name="form-name" value="contact" />
         <Input
           my={3}

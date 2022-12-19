@@ -51,14 +51,14 @@ export const Hero = () => {
                 </Text>
               </Box>
               <Box mt={5}>
-                <Button
+                {/* <Button
                   as="a"
                   href="/projects"
                   colorScheme="blue"
                   rightIcon={<ChevronRightIcon />}
                 >
                   Projects
-                </Button>
+                </Button> */}
                 {/* <Button
                   rightIcon={<ChevronRightIcon />}
                   as="a"
