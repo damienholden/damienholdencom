@@ -30,10 +30,10 @@ const links = [
     text: "Home",
     href: "/",
   },
-  {
-    text: "Projects",
-    href: "/projects",
-  },
+  // {
+  //   text: "Projects",
+  //   href: "/projects",
+  // },
   {
     text: "Contact",
     href: "/contact",
