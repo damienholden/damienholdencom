@@ -1,1 +1,1 @@
-export { Section } from "./Section";
+export { AnimatedSpan, Section } from "./Section";

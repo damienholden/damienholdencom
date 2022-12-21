@@ -39,7 +39,8 @@ export const ContactForm = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() =>
+      .then(
+        () => myForm.reset(),
         setToastMessage({
           title: "Sent",
           body: "Your email has been sent. I'll be in contact shortly",
@@ -101,7 +102,9 @@ export const ContactForm = () => {
           color={useColorModeValue("", "gray.800")}
           _placeholder={{ color: useColorModeValue("", "gray.400") }}
         ></Textarea>
-        <Button type="submit">Send</Button>
+        <Button type="submit" colorScheme="blue">
+          Send
+        </Button>
       </form>
     </Container>
   );

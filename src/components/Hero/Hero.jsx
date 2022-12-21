@@ -23,6 +23,12 @@ export const Hero = () => {
     typeSpeed: 100,
   });
 
+  const variants = {
+    hidden: { opacity: 0, x: 0, y: 20 },
+    enter: { opacity: 1, x: 0, y: 0 },
+    exit: { opacity: 0, x: -0, y: 20 },
+  };
+
   return (
     <HeroWrapper
       backgroundColor={useColorModeValue("#f5f5f5", "#202023")}
@@ -41,7 +47,12 @@ export const Hero = () => {
               <span>{text}</span>
               <Cursor cursorColor="#fffff" />
             </Heading>
-            <Section delay={0.5} displayInViewport={true}>
+            <Section
+              delay={0.5}
+              displayInViewport={true}
+              animate={{ y: -10, opacity: 1 }}
+              initial={{ y: 0, opacity: 0 }}
+            >
               <Box mt={5}>
                 <Text bold="true" fontSize={20}>
                   I've been working professionally for over 7 years and my main
@@ -51,6 +62,15 @@ export const Hero = () => {
                 </Text>
               </Box>
               <Box mt={5}>
+                <Button
+                  rightIcon={<ChevronRightIcon />}
+                  as="a"
+                  href="../DamienHoldenCV.pdf"
+                  colorScheme="blue"
+                  variant="outline"
+                >
+                  View my CV
+                </Button>
                 {/* <Button
                   as="a"
                   href="/projects"
@@ -58,16 +78,6 @@ export const Hero = () => {
                   rightIcon={<ChevronRightIcon />}
                 >
                   Projects
-                </Button> */}
-                {/* <Button
-                  rightIcon={<ChevronRightIcon />}
-                  as="a"
-                  href="#"
-                  colorScheme="blue"
-                  variant="outline"
-                  ml={5}
-                >
-                  View my CV
                 </Button> */}
               </Box>
             </Section>

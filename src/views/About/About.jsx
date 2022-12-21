@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   Heading,
   Container,
@@ -9,11 +9,16 @@ import {
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react";
+import { useInView } from "framer-motion";
+
 import { Section } from "../../components/Section/Section";
 
 import { AboutWrapper } from "./About.styles";
 
 export const About = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
   return (
     <AboutWrapper backgroundColor={useColorModeValue("#f5f5f5", "#202023")}>
       <Container
@@ -23,20 +28,27 @@ export const About = () => {
         as="section"
         bg={useColorModeValue("#f5f5f5", "#202023")}
       >
-        <Section delay={0.5} displayInViewport={true}>
+        <Section
+          delay={0.5}
+          displayInViewport={true}
+          initial={{ y: 0, opacity: 0 }}
+          whileInView={{ y: -10, opacity: 1 }}
+          animate={{ y: -10 }}
+        >
           <Box>
             <Heading as="h3" variant="section-title">
               About
             </Heading>
             <p>
-              My name is Damien, I'm a software engineer originally from Cork,
-              Ireland. I've been working professionally for over 8 years and my
-              main focus is around frontend development.
+              My name is Damien, I'm a software engineer from Cork, Ireland.
+              I've been working professionally for over 7 years and my main
+              focus is around frontend development.
             </p>
             <br />
             <p>
-              I love to build scalable solutions and I'm always looking to
-              improve my existing knowledge
+              I love to build scalable solutions with clean and mantainable
+              code. I'm always looking to improve my existing knowledge and love
+              learning new frontend technologies.
             </p>
           </Box>
           <Box mt={14}>
