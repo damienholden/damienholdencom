@@ -5,6 +5,7 @@ export const HeroWrapper = styled.section`
   display: flex;
   align-items: center;
   position: relative;
+  background: url("../img/.svg");
   &::after {
     content: "";
     z-index: 0;
