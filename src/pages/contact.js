@@ -1,6 +1,6 @@
 import React from "react";
-import { ContactForm } from "../components/ContactForm";
-import { Layout } from "../components/Layout/Layout";
+import { ContactForm } from "@components/ContactForm";
+import { Layout } from "@components/Layout";
 
 const Index = () => {
   return (

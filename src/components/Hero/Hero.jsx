@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import { Section } from "../Section";
+import { Section } from "@components/Section";
 
 import { HeroWrapper } from "./Hero.styles";
 import { ChevronRightIcon } from "@chakra-ui/icons";

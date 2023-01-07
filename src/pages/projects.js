@@ -10,7 +10,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import { Layout } from "../components/Layout/Layout";
+import { Layout } from "@components/Layout";
 
 const Projects = () => {
   return (

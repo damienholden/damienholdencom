@@ -22,7 +22,7 @@ import {
 } from "@chakra-ui/react";
 
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { ThemeToggleButton } from "../ThemeToggleButton";
+import { ThemeToggleButton } from "@components/ThemeToggleButton";
 import { MenuItem } from "./Navigation.styles";
 
 const links = [

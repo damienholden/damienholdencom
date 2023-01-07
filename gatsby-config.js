@@ -32,5 +32,16 @@ module.exports = {
         head: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@components": "src/components",
+          "@pages": "src/pages",
+          "@views": "src/views",
+        },
+        extensions: ["js"],
+      },
+    },
   ],
 };

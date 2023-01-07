@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Text, useColorModeValue, Flex } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
-import { TimelineItem } from "../TimelineItem/TimelineItem";
+import { TimelineItem } from "@components/TimelineItem";
 
 export const Timeline = () => {
   const textColor = useColorModeValue("gray.700", "white.300");

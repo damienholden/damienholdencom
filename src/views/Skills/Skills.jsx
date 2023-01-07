@@ -7,7 +7,7 @@ import {
   Image,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { Section } from "../../components/Section/Section";
+import { Section } from "@components/Section/Section";
 import { SkillsWrapper } from "./Skills.styles";
 
 import skillsList from "./skillsList.json";

@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { useInView } from "framer-motion";
 
-import { Section } from "../../components/Section/Section";
+import { Section } from "@components/Section/Section";
 
 import { AboutWrapper } from "./About.styles";
 
