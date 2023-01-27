@@ -9,7 +9,8 @@ const config = {
 const styles = {
   global: (props) => ({
     body: {
-      bg: mode("#ffffff", "#374151")(props),
+      bg: mode("#fafafa", "#050407")(props),
+      color: mode("#202124", "#f2f2f2")(props),
     },
   }),
 };
@@ -34,7 +35,12 @@ const components = {
   },
   Link: {
     baseStyle: (props) => ({
-      color: mode("#000000", "#ffffff")(props),
+      color: mode("#202124", "#f2f2f2")(props),
+    }),
+  },
+  Divider: {
+    baseStyle: (props) => ({
+      borderColor: mode("#00000060", "#ffffff60")(props),
     }),
   },
 };

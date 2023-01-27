@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
 export const HeroWrapper = styled.section`
+  background: ${(props) => props.backgroundColor};
+  color: ${(props) => props.color};
   height: 90vh;
+  text-align: center;
   display: flex;
   align-items: center;
   position: relative;
-  background: url("../img/.svg");
+  scroll-snap-align: start;
   &::after {
     content: "";
     z-index: 0;

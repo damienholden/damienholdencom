@@ -49,8 +49,7 @@ export const Navigation = () => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue("#ffffff40", "#20202340")}
-      style={{ backdropFilter: "blur(10px" }}
+      bg={useColorModeValue("#edf2f6", "#171923")}
       zIndex={5}
       borderBottom="solid 1px grey"
     >

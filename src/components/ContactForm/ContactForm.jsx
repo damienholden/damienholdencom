@@ -10,6 +10,7 @@ import {
   useColorModeValue,
   useToast,
 } from "@chakra-ui/react";
+import { ContactFormWrapper } from "./ContactForm.styles";
 
 export const ContactForm = () => {
   const [toastMessage, setToastMessage] = useState(undefined);
@@ -57,55 +58,57 @@ export const ContactForm = () => {
   };
 
   return (
-    <Container maxW="container.md" p={4} mt={4}>
-      <Box>
-        <Heading as="h2">Contact</Heading>
-        <Text mt={2} mb={4}>
-          Any questions or you just wanna talk about my experience, then leave
-          me a message.
-        </Text>
-      </Box>
-      <form
-        name="contact"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}
-      >
-        <Input type="hidden" name="form-name" value="contact" />
-        <Input
-          my={3}
-          isRequired
-          placeholder="Your Name"
-          type="text"
-          name="name"
-          bg={useColorModeValue("", "#fff")}
-          color={useColorModeValue("", "gray.800")}
-          _placeholder={{ color: useColorModeValue("", "gray.400") }}
-        />
-        <Input
-          my={3}
-          isRequired
-          placeholder="Your Email"
-          type="email"
-          name="email"
-          bg={useColorModeValue("", "#fff")}
-          color={useColorModeValue("", "gray.800")}
-          _placeholder={{ color: useColorModeValue("", "gray.400") }}
-        />
-        <Textarea
-          my={3}
-          h="150px"
-          isRequired
-          placeholder="Message"
-          name="message"
-          bg={useColorModeValue("", "#fff")}
-          color={useColorModeValue("", "gray.800")}
-          _placeholder={{ color: useColorModeValue("", "gray.400") }}
-        ></Textarea>
-        <Button type="submit" colorScheme="blue">
-          Send
-        </Button>
-      </form>
-    </Container>
+    <ContactFormWrapper>
+      <Container maxW="container.md" p={4}>
+        <Box>
+          <Heading as="h2">Contact</Heading>
+          <Text mt={2} mb={4}>
+            Any questions or you just wanna talk about my experience, then leave
+            me a message.
+          </Text>
+        </Box>
+        <form
+          name="contact"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
+        >
+          <Input type="hidden" name="form-name" value="contact" />
+          <Input
+            my={3}
+            isRequired
+            placeholder="Your Name"
+            type="text"
+            name="name"
+            bg={useColorModeValue("", "#fff")}
+            color={useColorModeValue("", "gray.800")}
+            _placeholder={{ color: useColorModeValue("", "gray.400") }}
+          />
+          <Input
+            my={3}
+            isRequired
+            placeholder="Your Email"
+            type="email"
+            name="email"
+            bg={useColorModeValue("", "#fff")}
+            color={useColorModeValue("", "gray.800")}
+            _placeholder={{ color: useColorModeValue("", "gray.400") }}
+          />
+          <Textarea
+            my={3}
+            h="150px"
+            isRequired
+            placeholder="Message"
+            name="message"
+            bg={useColorModeValue("", "#fff")}
+            color={useColorModeValue("", "gray.800")}
+            _placeholder={{ color: useColorModeValue("", "gray.400") }}
+          ></Textarea>
+          <Button type="submit" colorScheme="blue">
+            Send
+          </Button>
+        </form>
+      </Container>
+    </ContactFormWrapper>
   );
 };

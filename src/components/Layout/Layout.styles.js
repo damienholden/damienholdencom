@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
- padding-top:70px;
-  }
+  padding-top: 4rem;
 `;

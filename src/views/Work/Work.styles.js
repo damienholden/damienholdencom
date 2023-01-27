@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const SkillsWrapper = styled.section`
+export const WorkWrapper = styled.section`
   display: flex;
   align-items: center;
-  height: 90vh;
+  min-height: 100vh;
   scroll-snap-align: start;
 `;
