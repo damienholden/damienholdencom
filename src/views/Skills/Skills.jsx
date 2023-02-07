@@ -14,6 +14,7 @@ export const Skills = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
+        viewport={{ once: true }}
         style={{ width: "100%" }}
       >
         <Container pt={8} pb={8} maxW={{ md: "container.lg" }}>

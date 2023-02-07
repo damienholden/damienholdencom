@@ -49,7 +49,7 @@ export const Navigation = () => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue("#edf2f6", "#171923")}
+      bg={useColorModeValue("#edf2f6", "#26272b")}
       zIndex={5}
       borderBottom="solid 1px grey"
     >

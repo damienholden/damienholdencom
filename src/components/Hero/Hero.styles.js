@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeroWrapper = styled.section`
   background: ${(props) => props.backgroundColor};
   color: ${(props) => props.color};
-  height: 90vh;
+  height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;

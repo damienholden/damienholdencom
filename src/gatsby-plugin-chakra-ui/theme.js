@@ -9,7 +9,7 @@ const config = {
 const styles = {
   global: (props) => ({
     body: {
-      bg: mode("#fafafa", "#050407")(props),
+      bg: mode("#fafafa", "#1f2023")(props),
       color: mode("#202124", "#f2f2f2")(props),
     },
   }),

@@ -12,21 +12,21 @@ import {
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
-import { HeroWrapper } from "./Hero.styles";
 import { ChevronRightIcon, ArrowRightIcon } from "@chakra-ui/icons";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { HeroWrapper } from "./Hero.styles";
 
 export const Hero = () => {
   const [text] = useTypewriter({
-    words: ["Hi my name is Damien"],
+    words: ["Hi, my name is Damien"],
     delay: 10000,
     typeSpeed: 100,
   });
   return (
     <HeroWrapper
-      backgroundColor={useColorModeValue("#2C3F50", "#1a202c")}
+      backgroundColor={useColorModeValue("#2C3F50", "#26272b")}
       color="#f2f2f2"
-      waveColor={useColorModeValue("#fafafa", "#050407")}
+      waveColor={useColorModeValue("#fafafa", "#1f2023")}
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -35,7 +35,7 @@ export const Hero = () => {
         viewport={{ once: true }}
         style={{ width: "100%" }}
       >
-        <Container maxW={"container.lg"}>
+        <Container>
           <Heading as="h2" variant="page-title">
             <span>{text}</span>
             <Cursor cursorColor="#fffff" />
@@ -48,9 +48,10 @@ export const Hero = () => {
           >
             <Box mt={5}>
               <Text bold="true" fontSize={20}>
-                I've been working professionally for over 7 years and my main
-                focus is around frontend development. I love to create scalable
-                solutions and have a keen eye for creating beautiful UI's.
+                I'm a Software Engineer with over 7 years professional
+                experience. My main focus is around Frontend development. I love
+                to create scalable solutions and have a keen eye for creating
+                beautiful UI's.
               </Text>
             </Box>
             <Box mt={5} display="flex" justifyContent="center">
@@ -58,6 +59,7 @@ export const Hero = () => {
                 initial={{ x: -100, opacity: 0 }}
                 transition={{ duration: 1, delay: 0.6 }}
                 whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
                 animate={{ x: -10, opacity: 1 }}
               >
                 <Link
@@ -72,7 +74,7 @@ export const Hero = () => {
                     w={6}
                     h={6}
                     focusable={true}
-                    color={useColorModeValue("#050407", "#fafafa")}
+                    color="#fafafa"
                     _hover={{ color: "#0077B5" }}
                     transition="color 200ms ease"
                   />
@@ -82,6 +84,7 @@ export const Hero = () => {
                 initial={{ x: 100, opacity: 0 }}
                 transition={{ duration: 1, delay: 0.6 }}
                 whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
                 animate={{ x: -10, opacity: 1 }}
               >
                 <Link
@@ -95,7 +98,7 @@ export const Hero = () => {
                     w={6}
                     h={6}
                     focusable={true}
-                    color={useColorModeValue("#050407", "#fafafa")}
+                    color="#fafafa"
                     _hover={{ color: "#ffffffc3" }}
                     transition="color 200ms ease"
                   />
@@ -112,7 +115,7 @@ export const Hero = () => {
               >
                 View my CV
               </Button>
-              <Button
+              {/* <Button
                 ml="2rem"
                 as="a"
                 href="/projects"
@@ -120,7 +123,7 @@ export const Hero = () => {
                 rightIcon={<ChevronRightIcon />}
               >
                 Projects
-              </Button>
+              </Button> */}
             </Box>
           </motion.div>
           <motion.span
