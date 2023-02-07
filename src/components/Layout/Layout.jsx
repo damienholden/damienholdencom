@@ -28,7 +28,7 @@ export const Layout = ({ children }) => {
       <ChakraProvider theme={theme}>
         <main>
           <title>
-            {title} | {author}
+            {author} | {title}
           </title>
           <Navigation />
           {children}

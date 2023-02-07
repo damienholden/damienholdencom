@@ -4,5 +4,5 @@ export const AboutWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-items: center;
-  height: 90vh;
+  height: 100vh;
 `;

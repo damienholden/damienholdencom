@@ -21,8 +21,8 @@ import {
   DrawerCloseButton,
 } from "@chakra-ui/react";
 
-import { HamburgerIcon } from "@chakra-ui/icons";
 import { ThemeToggleButton } from "@components/ThemeToggleButton";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import { MenuItem } from "./Navigation.styles";
 
 const links = [
@@ -56,7 +56,7 @@ export const Navigation = () => {
       <Container
         display="flex"
         p={2}
-        maxW={{ md: "container.lg" }}
+        maxW={{ md: "container.xl" }}
         align="center"
         justifyContent="space-between"
       >

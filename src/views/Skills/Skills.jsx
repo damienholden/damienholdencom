@@ -10,18 +10,17 @@ import skillsList from "./skillsList.json";
 export const Skills = () => {
   return (
     <SkillsWrapper>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
-        viewport={{ once: true }}
-        style={{ width: "100%" }}
-      >
-        <Container pt={8} pb={8} maxW={{ md: "container.lg" }}>
+      <Container mt={10} mb={10}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true }}
+          style={{ width: "100%" }}
+        >
           <Heading as="h3" variant="section-title">
             Skills
           </Heading>
-
           <Grid
             borderRadius="30px"
             padding={6}
@@ -51,8 +50,8 @@ export const Skills = () => {
                 return <Skill key={index} alt={skill.alt} src={skill.imgSrc} />;
               })}
           </Grid>
-        </Container>
-      </motion.div>
+        </motion.div>
+      </Container>
     </SkillsWrapper>
   );
 };

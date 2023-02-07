@@ -39,6 +39,7 @@ module.exports = {
           "@components": "src/components",
           "@pages": "src/pages",
           "@views": "src/views",
+          "@hooks": "src/hooks",
         },
         extensions: ["js"],
       },

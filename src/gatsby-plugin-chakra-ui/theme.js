@@ -35,12 +35,17 @@ const components = {
   },
   Link: {
     baseStyle: (props) => ({
-      color: mode("#202124", "#f2f2f2")(props),
+      color: mode("#225662", "#f2f2f2")(props),
     }),
   },
   Divider: {
     baseStyle: (props) => ({
       borderColor: mode("#00000060", "#ffffff60")(props),
+    }),
+  },
+  Container: {
+    baseStyle: () => ({
+      maxW: "container.lg",
     }),
   },
 };

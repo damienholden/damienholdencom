@@ -4,6 +4,8 @@ import {
   Container,
   Box,
   Image,
+  Link,
+  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
@@ -22,32 +24,42 @@ export const About = () => {
         style={{ width: "100%" }}
       >
         <Container
-          maxW="container.lg"
           display="flex"
-          justifyContent="space-between"
+          justifyContent="center"
           alignItems={{ md: "center", base: "" }}
           flexDirection={{ sm: "row", base: "column-reverse" }}
         >
-          <Box
-            mt={6}
-            padding={8}
-            maxW="2xl"
-            // backgroundColor={useColorModeValue("#f2f2f2", "#16151a")}
-            borderColor={useColorModeValue("#f5f5f5", "#1d1d1d")}
-          >
+          <Box maxW="2xl" borderColor={useColorModeValue("#f5f5f5", "#1d1d1d")}>
             <Heading as="h3" variant="section-title">
               About
             </Heading>
             <p>
-              My name is Damien, I'm a software engineer from Cork, Ireland.
-              I've been working professionally for over 7 years and my main
-              focus is around frontend development.
+              My name is Damien, I'm a software engineer from Cork, Ireland. My
+              primary focus is around Frontend development and all things UI
+              related.
             </p>
             <br />
             <p>
-              I love to build scalable solutions with clean and mantainable
-              code. I'm always looking to improve my existing knowledge and love
-              learning new frontend technologies.
+              I love to problem solve and building scalable solutions with clean
+              and mantainable code is a passion of mine. I'm always looking to
+              improve my existing knowledge and love learning new frontend
+              technologies.
+            </p>
+            <br />
+            <p>
+              Feel free to reach out on{" "}
+              <Link
+                href="https://www.linkedin.com/in/damienholden/"
+                target="_blank"
+                rel="noreferrer"
+                isExternal
+              >
+                <Text as="b">Linkedin</Text>
+              </Link>{" "}
+              or via email using the{" "}
+              <Link href="/contact" rel="noreferrer">
+                <Text as="b">contact form</Text>.
+              </Link>
             </p>
           </Box>
           <Box
