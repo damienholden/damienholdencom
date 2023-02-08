@@ -59,14 +59,14 @@ export const Navigation = () => {
         align="center"
         justifyContent="space-between"
       >
-        <Flex align="center" mr={5}>
+        <Flex align="center">
           <Link href="/">
             <Image
               src={useColorModeValue(
                 "../img/logoLight.svg",
                 "../img/logoDark.svg"
               )}
-              width="200px"
+              width={{ base: "150px", md: "175px" }}
               alt="Logo"
             />
           </Link>
