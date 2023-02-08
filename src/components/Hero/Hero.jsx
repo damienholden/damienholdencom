@@ -9,11 +9,13 @@ import {
   Link,
   Icon,
 } from "@chakra-ui/react";
+
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
 import { ChevronRightIcon, ArrowRightIcon } from "@chakra-ui/icons";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+
 import { HeroWrapper } from "./Hero.styles";
 
 export const Hero = () => {
@@ -23,11 +25,8 @@ export const Hero = () => {
     typeSpeed: 100,
   });
   return (
-    <HeroWrapper
-      backgroundColor={useColorModeValue("#2C3F50", "#26272b")}
-      color="#f2f2f2"
-      waveColor={useColorModeValue("#fafafa", "#1f2023")}
-    >
+    <HeroWrapper>
+      {/* <Rect /> */}
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -74,12 +73,13 @@ export const Hero = () => {
                     w={6}
                     h={6}
                     focusable={true}
-                    color="#fafafa"
+                    color={useColorModeValue("#202124", "#fafafa")}
                     _hover={{ color: "#0077B5" }}
                     transition="color 200ms ease"
                   />
                 </Link>
               </motion.span>
+
               <motion.span
                 initial={{ x: 100, opacity: 0 }}
                 transition={{ duration: 1, delay: 0.6 }}
@@ -98,8 +98,8 @@ export const Hero = () => {
                     w={6}
                     h={6}
                     focusable={true}
-                    color="#fafafa"
-                    _hover={{ color: "#ffffffc3" }}
+                    color={useColorModeValue("#202124", "#fafafa")}
+                    _hover={{ color: "#bdbdbd" }}
                     transition="color 200ms ease"
                   />
                 </Link>
@@ -111,7 +111,6 @@ export const Hero = () => {
                 as="a"
                 href="../DamienHoldenCV.pdf"
                 colorScheme="blue"
-                variant="outline"
               >
                 View my CV
               </Button>

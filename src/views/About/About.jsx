@@ -24,12 +24,21 @@ export const About = () => {
         style={{ width: "100%" }}
       >
         <Container
+          borderRadius="30px"
+          padding={12}
+          backgroundColor={useColorModeValue("#f5f5f5", "#1f2023")}
+          borderColor={useColorModeValue("#f5f5f5", "#1d1d1d")}
+          boxShadow="xl"
           display="flex"
-          justifyContent="center"
-          alignItems={{ md: "center", base: "" }}
-          flexDirection={{ sm: "row", base: "column-reverse" }}
+          justifyContent="space-between"
+          alignItems="center"
+          flexDirection={{ md: "row", base: "column-reverse" }}
         >
-          <Box maxW="2xl" borderColor={useColorModeValue("#f5f5f5", "#1d1d1d")}>
+          <Box
+            maxW="xl"
+            borderColor={useColorModeValue("#f5f5f5", "#1d1d1d")}
+            flexShrink="10"
+          >
             <Heading as="h3" variant="section-title">
               About
             </Heading>

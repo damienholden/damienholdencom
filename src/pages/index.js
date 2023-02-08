@@ -11,6 +11,7 @@ const Index = () => {
   return (
     <Layout>
       <Hero />
+      <Divider />
       <About />
       <Divider />
       <Work />

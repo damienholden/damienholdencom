@@ -9,12 +9,11 @@ const config = {
 const styles = {
   global: (props) => ({
     body: {
-      bg: mode("#fafafa", "#1f2023")(props),
+      bg: mode("#", "#26272b")(props),
       color: mode("#202124", "#f2f2f2")(props),
     },
   }),
 };
-
 const fonts = {
   heading: `Roboto, sans-serif`,
   body: `Roboto, sans-serif`,

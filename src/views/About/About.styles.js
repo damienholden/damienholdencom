@@ -5,4 +5,5 @@ export const AboutWrapper = styled.section`
   align-items: center;
   justify-items: center;
   height: 100vh;
+  scroll-snap-align: start;
 `;

@@ -18,38 +18,45 @@ export const Skills = () => {
           viewport={{ once: true }}
           style={{ width: "100%" }}
         >
-          <Heading as="h3" variant="section-title">
-            Skills
-          </Heading>
-          <Grid
+          <Container
+            p={10}
             borderRadius="30px"
-            padding={6}
-            backgroundColor={useColorModeValue("#f2f2f2", "#16151a")}
+            backgroundColor={useColorModeValue("#f5f5f5", "#1f2023")}
             borderColor={useColorModeValue("#f5f5f5", "#1d1d1d")}
             boxShadow="xl"
-            templateColumns={{
-              md: "repeat(4, 1fr)",
-              sm: "repeat(4, 1fr)",
-              base: "repeat(2, 1fr)",
-            }}
-            gap={6}
           >
-            {skillsList.slice(0, skillsList.length / 2).map((skill, index) => {
-              return (
-                <Skill
-                  key={index}
-                  alt={skill.alt}
-                  src={skill.imgSrc}
-                  directionLeft
-                />
-              );
-            })}
-            {skillsList
-              .slice(skillsList.length / 2, skillsList.length)
-              .map((skill, index) => {
-                return <Skill key={index} alt={skill.alt} src={skill.imgSrc} />;
-              })}
-          </Grid>
+            <Heading as="h3" variant="section-title">
+              Skills
+            </Heading>
+            <Grid
+              templateColumns={{
+                md: "repeat(4, 1fr)",
+                sm: "repeat(4, 1fr)",
+                base: "repeat(2, 1fr)",
+              }}
+              gap={6}
+            >
+              {skillsList
+                .slice(0, skillsList.length / 2)
+                .map((skill, index) => {
+                  return (
+                    <Skill
+                      key={index}
+                      alt={skill.alt}
+                      src={skill.imgSrc}
+                      directionLeft
+                    />
+                  );
+                })}
+              {skillsList
+                .slice(skillsList.length / 2, skillsList.length)
+                .map((skill, index) => {
+                  return (
+                    <Skill key={index} alt={skill.alt} src={skill.imgSrc} />
+                  );
+                })}
+            </Grid>
+          </Container>
         </motion.div>
       </Container>
     </SkillsWrapper>

@@ -8,6 +8,8 @@ import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import { Navigation } from "@components/Navigation";
 import { Footer } from "../Footer";
 
+import { LayoutWrapper } from "./Layout.style";
+
 export const Layout = ({ children }) => {
   const query = useStaticQuery(graphql`
     query {
@@ -22,7 +24,7 @@ export const Layout = ({ children }) => {
   const { title, author } = query.site.siteMetadata;
 
   return (
-    <>
+    <LayoutWrapper>
       <Fonts />
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <ChakraProvider theme={theme}>
@@ -35,6 +37,6 @@ export const Layout = ({ children }) => {
         </main>
         <Footer />
       </ChakraProvider>
-    </>
+    </LayoutWrapper>
   );
 };

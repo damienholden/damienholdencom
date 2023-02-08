@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const HeroWrapper = styled.section`
   background: ${(props) => props.backgroundColor};
   color: ${(props) => props.color};
+  padding-top: 65px;
   height: 100vh;
   text-align: center;
   display: flex;
   align-items: center;
   position: relative;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   &::after {
     content: "";
     z-index: 0;

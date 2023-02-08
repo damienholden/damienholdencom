@@ -15,7 +15,6 @@ import {
   Drawer,
   DrawerBody,
   DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
@@ -55,7 +54,7 @@ export const Navigation = () => {
     >
       <Container
         display="flex"
-        p={2}
+        p={4}
         maxW={{ md: "container.xl" }}
         align="center"
         justifyContent="space-between"
@@ -87,7 +86,7 @@ export const Navigation = () => {
             </MenuItem>
           ))}
         </Stack>
-        <Box align="right" flex={{ md: 0, sm: 1 }} ml={8}>
+        <Box align="right" flex={{ md: 0, base: 1 }} ml={8}>
           <ThemeToggleButton />
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu>
@@ -107,8 +106,6 @@ export const Navigation = () => {
                 <DrawerOverlay />
                 <DrawerContent>
                   <DrawerCloseButton />
-                  <DrawerHeader>Menu</DrawerHeader>
-
                   <DrawerBody>
                     <Box display="flex" flexDirection="column">
                       {links.map(({ text, href }) => (
