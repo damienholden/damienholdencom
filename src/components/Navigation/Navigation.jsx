@@ -87,7 +87,7 @@ export const Navigation = () => {
           ))}
         </Stack>
         <Box align="right" flex={{ md: 0, base: 1 }} ml={8}>
-          <ThemeToggleButton />
+          {/* <ThemeToggleButton /> */}
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu>
               <MenuButton
