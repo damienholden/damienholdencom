@@ -7,15 +7,9 @@ import {
   Image,
   Link,
   UnorderedList,
-  Tabs,
-  Tab,
-  TabList,
-  TabPanels,
-  TabPanel,
   ListItem,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { Timeline } from "@components/Timeline";
 import { motion } from "framer-motion";
 import { useWorkExperienceData } from "@hooks/useWorkExperienceData";
 
@@ -46,6 +40,7 @@ export const Work = () => {
           </Heading>
           {workExperience.map((role, index) => (
             <Flex
+              key={index}
               mt={10}
               borderRadius="15px"
               flexDirection={{

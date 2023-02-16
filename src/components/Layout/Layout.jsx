@@ -12,16 +12,18 @@ import { LayoutWrapper } from "./Layout.style";
 
 export const Layout = ({ children }) => {
   const query = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          author
+    query SiteInfo {
+      allSite {
+        nodes {
+          siteMetadata {
+            title
+            author
+          }
         }
       }
     }
   `);
-  const { title, author } = query.site.siteMetadata;
+  const { title, author } = query.allSite.nodes[0].siteMetadata;
 
   return (
     <LayoutWrapper>
