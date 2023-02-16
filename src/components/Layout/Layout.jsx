@@ -10,20 +10,17 @@ import { Footer } from "../Footer";
 
 import { LayoutWrapper } from "./Layout.style";
 
-export const Layout = ({ children }) => {
+export const Layout = ({ pageName, children }) => {
   const query = useStaticQuery(graphql`
     query SiteInfo {
-      allSite {
-        nodes {
-          siteMetadata {
-            title
-            author
-          }
+      site {
+        siteMetadata {
+          author
         }
       }
     }
   `);
-  const { title, author } = query.allSite.nodes[0].siteMetadata;
+  const { author } = query.site.siteMetadata;
 
   return (
     <LayoutWrapper>
@@ -32,7 +29,7 @@ export const Layout = ({ children }) => {
       <ChakraProvider theme={theme}>
         <main>
           <title>
-            {author} | {title}
+            {pageName} | {author}
           </title>
           <Navigation />
           {children}

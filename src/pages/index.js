@@ -9,7 +9,7 @@ import { Skills } from "@views/Skills";
 
 const Index = () => {
   return (
-    <Layout>
+    <Layout pageName="Home">
       <Hero />
       <Divider />
       <About />

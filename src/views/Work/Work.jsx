@@ -23,9 +23,10 @@ export const Work = () => {
         mt={20}
         mb={20}
         padding={12}
-        borderRadius="30px"
-        backgroundColor={useColorModeValue("#f5f5f5", "#1f2023")}
-        borderColor={useColorModeValue("#f5f5f5", "#1d1d1d")}
+        rounded="xl"
+        border="1px"
+        bg="#151e31"
+        borderColor="#0e172a"
         boxShadow="xl"
       >
         <motion.div

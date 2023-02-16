@@ -5,5 +5,5 @@ export const SkillsWrapper = styled.section`
   align-items: center;
   justify-items: center;
   min-height: 88vh;
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
 `;

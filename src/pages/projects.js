@@ -8,7 +8,7 @@ const Projects = () => {
   const projects = useProjectsData();
   console.log(projects);
   return (
-    <Layout>
+    <Layout pageName="Projects">
       <Container pt={20} pb={20} as="section" height="90vh">
         <Heading as="h3" variant="section-title">
           Projects

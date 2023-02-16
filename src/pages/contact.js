@@ -4,7 +4,7 @@ import { Layout } from "@components/Layout";
 
 const Index = () => {
   return (
-    <Layout>
+    <Layout pageName="Contact">
       <ContactForm />
     </Layout>
   );

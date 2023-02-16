@@ -11,11 +11,19 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FooterWrapper } from "./Footer.styles";
 
 export const Footer = () => {
+  const date = new Date();
   return (
-    <FooterWrapper backgroundColor={useColorModeValue("#edf2f6", "#26272b")}>
+    <FooterWrapper backgroundColor={useColorModeValue("#edf2f6", "#111827")}>
       <Divider />
-      <Container maxW="container.xl" p={4} mt={4}>
-        <Box display="flex" justifyContent="flex-end">
+      <Container
+        maxW="container.xl"
+        p={4}
+        mt={4}
+        display="flex"
+        justifyContent="space-between"
+      >
+        <Box>Developed by Damien Holden - {date.getFullYear()}</Box>
+        <Box display="flex">
           <Link
             px={5}
             href="https://www.linkedin.com/in/damienholden/"

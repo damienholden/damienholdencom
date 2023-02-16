@@ -24,10 +24,11 @@ export const About = () => {
         style={{ width: "100%" }}
       >
         <Container
-          borderRadius="30px"
           padding={12}
-          backgroundColor={useColorModeValue("#f5f5f5", "#1f2023")}
-          borderColor={useColorModeValue("#f5f5f5", "#1d1d1d")}
+          rounded="xl"
+          border="1px"
+          bg="#151e31"
+          borderColor="#0e172a"
           boxShadow="xl"
           display="flex"
           justifyContent="space-between"
