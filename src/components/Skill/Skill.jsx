@@ -18,7 +18,8 @@ export const Skill = ({ alt, src, directionLeft }) => {
         animate={{ x: -10, opacity: 1 }}
       >
         <Image
-          style={{ height: "65px", width: "auto" }}
+          h="65px"
+          w="auto"
           src={src}
           alt={alt}
           title={alt}
