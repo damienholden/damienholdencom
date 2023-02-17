@@ -41,14 +41,14 @@ const links = [
 export const Navigation = () => {
   const { isOpen, onClose, onOpen } = useDisclosure();
   const btnRef = React.useRef();
-  const itemColor = useColorModeValue("#000000", "#ffffff");
+  const itemColor = "#ffffff";
 
   return (
     <Box
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue("#edf2f6", "#111827")}
+      bg="#111827"
       zIndex={5}
       borderBottom="solid 1px grey"
     >
@@ -62,10 +62,7 @@ export const Navigation = () => {
         <Flex align="center">
           <Link href="/">
             <Image
-              src={useColorModeValue(
-                "../img/logoLight.svg",
-                "../img/logoDark.svg"
-              )}
+              src={"../img/logoDark.svg"}
               width={{ base: "150px", md: "175px" }}
               alt="Logo"
             />

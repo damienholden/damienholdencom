@@ -1,19 +1,12 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  Link,
-  Icon,
-  Divider,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Box, Container, Link, Icon, Divider } from "@chakra-ui/react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FooterWrapper } from "./Footer.styles";
 
 export const Footer = () => {
   const date = new Date();
   return (
-    <FooterWrapper backgroundColor={useColorModeValue("#edf2f6", "#111827")}>
+    <FooterWrapper backgroundColor="#111827">
       <Divider />
       <Container
         maxW="container.xl"

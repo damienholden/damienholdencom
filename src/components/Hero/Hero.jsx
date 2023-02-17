@@ -73,7 +73,7 @@ export const Hero = () => {
                     w={6}
                     h={6}
                     focusable={true}
-                    color={useColorModeValue("#202124", "#fafafa")}
+                    color="#fafafa"
                     _hover={{ color: "#0077B5" }}
                     transition="color 200ms ease"
                   />
@@ -98,7 +98,7 @@ export const Hero = () => {
                     w={6}
                     h={6}
                     focusable={true}
-                    color={useColorModeValue("#202124", "#fafafa")}
+                    color="#fafafa"
                     _hover={{ color: "#bdbdbd" }}
                     transition="color 200ms ease"
                   />

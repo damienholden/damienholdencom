@@ -2,15 +2,14 @@ import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 
 const config = {
-  initialColorMode: "dark",
-  useSystemColorMode: true,
+  // useSystemColorMode: false,
 };
 
 const styles = {
   global: (props) => ({
     body: {
       bg: "#111827",
-      color: mode("#202124", "#f2f2f2")(props),
+      color: "#f2f2f2",
     },
   }),
 };
@@ -34,12 +33,12 @@ const components = {
   },
   Link: {
     baseStyle: (props) => ({
-      color: mode("#225662", "#f2f2f2")(props),
+      color: "#f2f2f2",
     }),
   },
   Divider: {
     baseStyle: (props) => ({
-      borderColor: mode("#00000060", "#ffffff60")(props),
+      borderColor: "#ffffff60",
     }),
   },
   Container: {
