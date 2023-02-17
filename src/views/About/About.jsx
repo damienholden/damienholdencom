@@ -3,7 +3,7 @@ import {
   Heading,
   Container,
   Box,
-  Image,
+  Img,
   Link,
   Text,
   useColorModeValue,
@@ -78,7 +78,8 @@ export const About = () => {
             align="center"
             display={{ base: "none", sm: "block" }}
           >
-            <Image
+            <Img
+              loading="lazy"
               borderRadius="full"
               borderColor="whiteAlpha.800"
               borderWidth="2px"

@@ -67,6 +67,7 @@ export const Hero = () => {
                   target="_blank"
                   rel="noreferrer"
                   isExternal
+                  style={{ display: "block" }}
                 >
                   <Icon
                     as={BsLinkedin}
@@ -92,6 +93,7 @@ export const Hero = () => {
                   target="_blank"
                   rel="noreferrer"
                   isExternal
+                  style={{ display: "block" }}
                 >
                   <Icon
                     as={BsGithub}

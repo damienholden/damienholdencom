@@ -10,7 +10,6 @@ import {
   Menu,
   MenuButton,
   IconButton,
-  useColorModeValue,
   useDisclosure,
   Drawer,
   DrawerBody,
@@ -64,7 +63,9 @@ export const Navigation = () => {
             <Image
               src={"../img/logoDark.svg"}
               width={{ base: "150px", md: "175px" }}
+              height="auto"
               alt="Logo"
+              loading="lazy"
             />
           </Link>
         </Flex>

@@ -65,6 +65,7 @@ export const Work = () => {
                     src={role.logo.references[0].url}
                     alt={role.logo.references[0].title}
                     w="150px"
+                    h="auto"
                     loading="lazy"
                   />
                 </Link>
