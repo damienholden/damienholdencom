@@ -32,13 +32,20 @@ const components = {
     },
   },
   Link: {
-    baseStyle: (props) => ({
+    baseStyle: () => ({
       color: "#f2f2f2",
     }),
   },
   Divider: {
-    baseStyle: (props) => ({
+    baseStyle: () => ({
       borderColor: "#ffffff60",
+    }),
+  },
+  Drawer: {
+    baseStyle: () => ({
+      dialog: {
+        bg: "#2d3748",
+      },
     }),
   },
   Container: {
