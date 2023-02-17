@@ -17,7 +17,13 @@ export const Skill = ({ alt, src, directionLeft }) => {
         whileInView={{ opacity: 1, x: 0 }}
         animate={{ x: -10, opacity: 1 }}
       >
-        <Image h="65px" src={src} alt={alt} title={alt} loading="lazy" />
+        <Image
+          style={{ height: "65px", width: "auto" }}
+          src={src}
+          alt={alt}
+          title={alt}
+          loading="lazy"
+        />
       </motion.span>
     </GridItem>
   );

@@ -64,8 +64,7 @@ export const Work = () => {
                     borderColor="#25272b"
                     src={role.logo.references[0].url}
                     alt={role.logo.references[0].title}
-                    w="150px"
-                    h="auto"
+                    style={{ height: "auto", width: "150px" }}
                     loading="lazy"
                   />
                 </Link>

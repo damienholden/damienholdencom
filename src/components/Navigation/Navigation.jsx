@@ -62,8 +62,7 @@ export const Navigation = () => {
           <Link href="/">
             <Image
               src={"../img/logoDark.svg"}
-              width={{ base: "150px", md: "175px" }}
-              height="auto"
+              style={{ width: "175px", height: "auto" }}
               alt="Logo"
               loading="lazy"
             />
